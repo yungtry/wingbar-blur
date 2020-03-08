@@ -12,9 +12,9 @@ import (
 var opts struct {
 	Path string `long:"path" description:"Path to the wallpaper." required:"true"`
 	Theme string `short:"t" long:"theme" description:"Choose theme: none, light, dark." default:"none"`
-	Opacity float64 `short:"o" long:"opacity" description:"Theme opacity" default:"0.4"`
-	Blur float64 `short:"b" long:"blur" description:"Choose blur intensity" default:"10"`
-	Size int `short:"s" long:"size" description:"Choose size" default:"20"`
+	Opacity float64 `short:"o" long:"opacity" description:"Theme opacity" default:"0.15"`
+	Blur float64 `short:"b" long:"blur" description:"Choose blur intensity" default:"20"`
+	Size int `short:"s" long:"size" description:"Choose size" default:"30"`
 	Change bool `short:"c" long:"change" description:"Set the output as wallpaper."`
 }
 
@@ -45,19 +45,6 @@ func Process(src image.Image, theme string, opacity float64, blur float64, size 
 	}
 
 	//set-wallpaper ~/Downloads/coolpicture.png
-}
-
-func TranslateSize(size string) int{
-	switch (size) {
-	case "small":
-		return 5
-	case "medium":
-		return 10
-	case "big":
-		return 15
-	default:
-		return 10
-	}
 }
 
 func TranslateColor(theme string) color.NRGBA{
