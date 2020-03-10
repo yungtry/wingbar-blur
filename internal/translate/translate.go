@@ -4,8 +4,8 @@ import (
 	"image/color"
 )
 
-func Color(theme string) color.NRGBA{
-	switch(theme) {
+func Color(theme string) color.NRGBA {
+	switch theme {
 	case "none":
 		return color.NRGBA{0, 0, 0, 0}
 	case "light":

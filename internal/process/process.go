@@ -1,11 +1,11 @@
 package process
 
 import (
-	"log"
-	"image"
-	"image/color"
 	"github.com/disintegration/imaging"
 	"github.com/yungtry/wingbar-blur/internal/translate"
+	"image"
+	"image/color"
+	"log"
 )
 
 func Process(src image.Image, theme string, opacity float64, blur float64, size int, change bool) {
