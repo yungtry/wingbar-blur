@@ -1,6 +1,8 @@
 # wingbar-blur
  
-Emulate blur under the wingbar panel on elementary OS.
+## What does it do?
+
+It fakes blur under the wingbar panel on elementary OS by editing your wallpaper.
 
 ## Usage
 
@@ -13,12 +15,17 @@ Usage:
 Application Options:
       --path=    Path to the wallpaper.
   -t, --theme=   Choose theme: none, light, dark. (default: none)
-  -o, --opacity= Theme opacity (default: 0.4)
-  -b, --blur=    Choose blur intensity (default: 10)
-  -s, --size=    Choose size (default: 20)
-  -c, --change   Set the output as wallpaper.
+  -o, --opacity= Theme opacity (default: 0.15)
+  -b, --blur=    Choose blur intensity (default: 20)
+  -s, --size=    Choose size (default: 30)
 
 Help Options:
   -h, --help     Show this help message
 
+```
+
+## Example
+
+```sh
+wingbar-blur --path ~/Pictures/cool_wallpaper.png --theme light --blur 50 --size 10
 ```

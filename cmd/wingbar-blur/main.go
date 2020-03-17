@@ -14,7 +14,7 @@ var opts struct {
 	Opacity float64 `short:"o" long:"opacity" description:"Theme opacity" default:"0.15"`
 	Blur    float64 `short:"b" long:"blur" description:"Choose blur intensity" default:"20"`
 	Size    int     `short:"s" long:"size" description:"Choose size" default:"30"`
-	Change  bool    `short:"c" long:"change" description:"Set the output as wallpaper."`
+	//Change  bool    `short:"c" long:"change" description:"Set the output as wallpaper."`
 }
 
 func main() {

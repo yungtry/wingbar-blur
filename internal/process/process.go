@@ -22,6 +22,4 @@ func Process(src image.Image, theme string, opacity float64, blur float64, size 
 	if err != nil {
 		log.Fatalf("failed to save image: %v", err)
 	}
-
-	//set-wallpaper ~/Downloads/coolpicture.png
 }
