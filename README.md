@@ -2,7 +2,7 @@
  
 ## What does it do?
 
-It fakes blur under the wingbar panel on elementary OS by editing your wallpaper.
+It fakes a blur effect under the wingbar panel on elementary OS by editing your wallpaper.
 
 ## Usage
 
@@ -24,7 +24,7 @@ Help Options:
 
 ```
 
-## Example
+## Example usage
 
 ```sh
 wingbar-blur --path ~/Pictures/cool_wallpaper.png --theme light --blur 50 --size 10
