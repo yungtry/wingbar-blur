@@ -1,14 +1,15 @@
 package process
 
 import (
-	"github.com/disintegration/imaging"
-	"github.com/yungtry/wingbar-blur/internal/translate"
 	"image"
 	"image/color"
 	"log"
+
+	"github.com/disintegration/imaging"
+	"github.com/yungtry/wingbar-blur/internal/translate"
 )
 
-func Process(src image.Image, theme string, opacity float64, blur float64, size int, change bool) {
+func Process(src image.Image, theme string, opacity float64, blur float64, size int) {
 	img1 := imaging.Blur(src, blur)
 	img2 := imaging.CropAnchor(img1, src.Bounds().Dx(), size, imaging.TopLeft)
 

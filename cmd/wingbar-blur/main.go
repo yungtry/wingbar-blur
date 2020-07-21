@@ -1,11 +1,12 @@
 package main
 
 import (
+	"log"
+	"os"
+
 	"github.com/disintegration/imaging"
 	"github.com/jessevdk/go-flags"
 	"github.com/yungtry/wingbar-blur/internal/process"
-	"log"
-	"os"
 )
 
 var opts struct {
@@ -25,5 +26,5 @@ func main() {
 		log.Fatalf("Please specify '--path' to the wallpaper. \nError: %v", err)
 	}
 
-	process.Process(src, opts.Theme, opts.Opacity, opts.Blur, opts.Size, opts.Change)
+	process.Process(src, opts.Theme, opts.Opacity, opts.Blur, opts.Size)
 }
